@@ -19,6 +19,7 @@ public class EmployeeRegistration {
 	@RequestMapping(method = RequestMethod.POST, value = "/register", produces = MediaType.APPLICATION_JSON_VALUE)
 	public void registerEmployee(@RequestBody User user) {
 		System.out.println("Hello World! " + user.getLastName());
+		
 	}
 
 	@ExceptionHandler
